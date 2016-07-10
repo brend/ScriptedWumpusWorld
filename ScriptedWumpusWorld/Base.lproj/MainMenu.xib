@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="ScriptedWumpusWorld" id="56">
+                    <menu key="submenu" title="ScriptedWumpusWorld" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About ScriptedWumpusWorld" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129"/>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide ScriptedWumpusWorld" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit ScriptedWumpusWorld" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Game" id="2fR-du-8Fi">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Game" id="UiH-q1-lUo">
+                        <items>
+                            <menuItem title="New GUI Hunter" keyEquivalent="n" id="rFj-Rv-cIa">
+                                <connections>
+                                    <action selector="newGameWithGuiHunter:" target="494" id="cXJ-cH-Dal"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="New Hunter from file..." keyEquivalent="o" id="g2A-z4-hFc">
+                                <connections>
+                                    <action selector="newGameWithHunterFromFile:" target="494" id="wXf-Dr-Dyj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reload last Hunter file" enabled="NO" keyEquivalent="r" id="Y4T-qP-zas">
+                                <connections>
+                                    <action selector="reloadMostRecentHunterFile:" target="494" id="8f3-Vg-Zen"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="537">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="538"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="239">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="240"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="491">
+                        <items>
+                            <menuItem title="ScriptedWumpusWorld Help" keyEquivalent="?" id="492">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="493"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="ScriptedWumpusWorld" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <rect key="contentRect" x="0.0" y="0.0" width="800" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="539" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="539" firstAttribute="bottom" secondItem="372" secondAttribute="bottom" id="541"/>
+                    <constraint firstItem="539" firstAttribute="top" secondItem="372" secondAttribute="top" id="542"/>
+                    <constraint firstItem="539" firstAttribute="trailing" secondItem="372" secondAttribute="trailing" id="543"/>
+                    <constraint firstItem="539" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="544"/>
+                </constraints>
+            </view>
+        </window>
+        <customObject id="494" customClass="AppDelegate" customModule="ScriptedWumpusWorld" customModuleProvider="target">
+            <connections>
+                <outlet property="guiDisabledWarning" destination="xVK-Ik-LPE" id="Rgg-i3-bku"/>
+                <outlet property="guiHunter" destination="2hc-nL-Ruf" id="2nd-I6-C8J"/>
+                <outlet property="reloadHunterFileMenuItem" destination="Y4T-qP-zas" id="3Jr-nu-XTf"/>
+                <outlet property="skView" destination="539" id="540"/>
+                <outlet property="window" destination="371" id="532"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <window title="Manual Hunter Controls" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="gzd-uD-3Fm" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="139" y="85" width="276" height="287"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <view key="contentView" id="Uot-VO-9dT">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="287"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-A9-LKg">
+                        <rect key="frame" x="114" y="239" width="49" height="32"/>
+                        <buttonCell key="cell" type="push" title="↑" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9PO-Ak-BFs">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueMoveUp:" target="2hc-nL-Ruf" id="88J-cH-BS1"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9m-1w-Dho">
+                        <rect key="frame" x="175" y="208" width="53" height="32"/>
+                        <buttonCell key="cell" type="push" title="→" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wcI-Ru-f4G">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueMoveRight:" target="2hc-nL-Ruf" id="VOK-Rs-FZ6"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JvU-hQ-s75">
+                        <rect key="frame" x="114" y="177" width="49" height="32"/>
+                        <buttonCell key="cell" type="push" title="↓" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Io9-KW-uYN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueMoveDown:" target="2hc-nL-Ruf" id="hHm-OR-dVd"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sik-KL-5ly">
+                        <rect key="frame" x="48" y="208" width="53" height="32"/>
+                        <buttonCell key="cell" type="push" title="←" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qP8-p9-ySV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueMoveLeft:" target="2hc-nL-Ruf" id="JeE-wk-2kx"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="le9-bn-OSY">
+                        <rect key="frame" x="114" y="126" width="49" height="32"/>
+                        <buttonCell key="cell" type="push" title="↑" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TU4-Rn-tqN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueShootUp:" target="2hc-nL-Ruf" id="tef-GD-L57"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nou-vS-k0e">
+                        <rect key="frame" x="175" y="95" width="53" height="32"/>
+                        <buttonCell key="cell" type="push" title="→" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gZ5-59-QjK">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueShootRight:" target="2hc-nL-Ruf" id="guL-zy-a0z"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujv-md-NBS">
+                        <rect key="frame" x="114" y="64" width="49" height="32"/>
+                        <buttonCell key="cell" type="push" title="↓" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ebt-dW-akb">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueShootDown:" target="2hc-nL-Ruf" id="MAB-yZ-b3b"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hU8-vL-S9P">
+                        <rect key="frame" x="48" y="95" width="53" height="32"/>
+                        <buttonCell key="cell" type="push" title="←" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SnA-20-vjv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueShootLeft:" target="2hc-nL-Ruf" id="kM2-mC-Vne"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-og-0Qs">
+                        <rect key="frame" x="121" y="217" width="34" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Walk" id="vHU-Pr-XXt">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pH-xD-vr6">
+                        <rect key="frame" x="119" y="104" width="40" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Shoot" id="wjt-y8-4L9">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-Db-wWg">
+                        <rect key="frame" x="163" y="13" width="76" height="32"/>
+                        <buttonCell key="cell" type="push" title="Leave" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nub-Jx-EeA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueueExit:" target="2hc-nL-Ruf" id="CPE-Vg-X2q"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdK-px-ssR">
+                        <rect key="frame" x="34" y="13" width="81" height="32"/>
+                        <buttonCell key="cell" type="push" title="Pick Up" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="F5w-HP-4mz">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enqueuePickUp:" target="2hc-nL-Ruf" id="lmd-O3-4zN"/>
+                        </connections>
+                    </button>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVK-Ik-LPE">
+                        <rect key="frame" x="59" y="162" width="159" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Gui controls are disabled!" id="2SR-Yy-cDu">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.8466698232323232" green="0.4235940973942785" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="-105" y="390.5"/>
+        </window>
+        <customObject id="2hc-nL-Ruf" userLabel="GuiHunter" customClass="GuiHunter" customModule="ScriptedWumpusWorld" customModuleProvider="target"/>
+    </objects>
+</document>
