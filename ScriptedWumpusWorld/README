@@ -26,6 +26,8 @@ to the function will signify the following:
 Your implementation of the hunter's logic must evaluate these arguments and
 come up with the next action to take.
 
+Use global variables to have persisting state between calls of get_action.
+
 The return value of the function must be an integer corresponding to one of
 the predefined actions:
 
@@ -49,6 +51,8 @@ Subsequent shoot commands have no effect other than a wasted turn.
 
 To pick up the gold or exit the dungeon, the hunter must be positioned on the square
 with the gold or the exit, respectively.
+
+For implementation examples see the files SampleHunter.lua and RandomHunter.lua.
 
 ## Who?
 Lua source code: lua.org
