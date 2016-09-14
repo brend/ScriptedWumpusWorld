@@ -52,7 +52,6 @@
 		412C922E1D621D4100283F31 /* ScoreTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C922D1D621D4100283F31 /* ScoreTracker.swift */; };
 		4147A6611D8404B60049F142 /* RandomHunter.lua in Resources */ = {isa = PBXBuildFile; fileRef = 4147A6601D8404B60049F142 /* RandomHunter.lua */; };
 		41E3EF2E1D573D090013CFDE /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3EF2D1D573D090013CFDE /* GameState.swift */; };
-		41EE13931D3B7C860073D8EE /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE13921D3B7C860073D8EE /* Actor.swift */; };
 		41F978C31D437EAF008EE291 /* HunterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F978C21D437EAF008EE291 /* HunterAction.swift */; };
 		41FBB50D1D5620E2009D9E72 /* GuiHunter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FBB50C1D5620E2009D9E72 /* GuiHunter.swift */; };
 /* End PBXBuildFile section */
@@ -130,7 +129,6 @@
 		412C922D1D621D4100283F31 /* ScoreTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTracker.swift; sourceTree = "<group>"; };
 		4147A6601D8404B60049F142 /* RandomHunter.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RandomHunter.lua; sourceTree = "<group>"; };
 		41E3EF2D1D573D090013CFDE /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
-		41EE13921D3B7C860073D8EE /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		41F978C21D437EAF008EE291 /* HunterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HunterAction.swift; sourceTree = "<group>"; };
 		41FBB50C1D5620E2009D9E72 /* GuiHunter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiHunter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,7 +171,6 @@
 				41FBB50C1D5620E2009D9E72 /* GuiHunter.swift */,
 				41F978C21D437EAF008EE291 /* HunterAction.swift */,
 				41E3EF2D1D573D090013CFDE /* GameState.swift */,
-				41EE13921D3B7C860073D8EE /* Actor.swift */,
 				411876381D324347000B33C2 /* GameScene.swift */,
 				4111C2701D86ADD10078A022 /* GameScene(Creation).swift */,
 				4111C2721D86B22F0078A022 /* GameScene(Sensations).swift */,
@@ -357,7 +354,6 @@
 				411876901D3249F6000B33C2 /* liolib.c in Sources */,
 				4118769B1D3249F6000B33C2 /* lstrlib.c in Sources */,
 				411876A11D3249F6000B33C2 /* lzio.c in Sources */,
-				41EE13931D3B7C860073D8EE /* Actor.swift in Sources */,
 				411876951D3249F6000B33C2 /* lobject.c in Sources */,
 				4118768A1D3249F6000B33C2 /* ldebug.c in Sources */,
 				4118769D1D3249F6000B33C2 /* ltablib.c in Sources */,
