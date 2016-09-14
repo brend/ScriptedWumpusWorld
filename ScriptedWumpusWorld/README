@@ -1,0 +1,64 @@
+# Scripted Wumpus World
+
+## What?
+An implementation of the wumpus world. Write your own wumpus hunter!
+
+## How?
+To implement your own wumpus hunter, write a lua script that implement a
+function with the following signature:
+
+    function get_action(smell, breeze, glitter, bumped, scream)
+
+For each turn of the game, this function will be called. The arguments passed
+to the function will signify the following:
+
+- smell: true iff the hunter can smell the wumpus
+- breeze: true iff the hunter can feel a breeze caused by a pit
+- glitter: true iff the hunter sees the glitter of gold
+- bumped: true iff the hunter bumped his head as a result of last turn's "move"
+  action
+- scream: true iff the hunter hears the death scream of the wumpus as a result
+  of last turn's "shoot arrow" action
+
+Your implementation of the hunter's logic must evaluate these arguments and
+come up with the next action to take.
+
+The return value of the function must be an integer corresponding to one of
+the predefined actions:
+
+    value action      description
+        0 MoveLeft    move one square to the left
+        1 MoveRight   move one square to the right
+        2 MoveUp      move one square to the up
+        3 MoveDown    move one square downwards
+        4 ShootLeft   shoot arrow to the left
+        5 ShootRight  shoot arrow to the right
+        6 ShootUp     shoot arrow upwards
+        7 ShootDown   shoot arrow downwards
+        8 PickUp      pick up the gold
+        9 Exit        leave the dungeon
+
+Note that the hunter doesn't rotate; rather you have the option to move or shoot up, down,
+left, or right at all times.
+
+The hunter has one arrow that can be fired by issuing one of the "ShootX" commands.
+Subsequent shoot commands have no effect other than a wasted turn.
+
+To pick up the gold or exit the dungeon, the hunter must be positioned on the square
+with the gold or the exit, respectively.
+
+## Who?
+Lua source code: lua.org
+Graphics assets: Joona
+Application source code: waldrumpus
+
+## Wha?
+Have fun!
+
+
+
+
+
+
+
+

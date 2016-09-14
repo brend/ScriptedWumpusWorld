@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410220981D898DE800283B90 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 410220971D898DE800283B90 /* README */; };
 		4111C26F1D86A81F0078A022 /* GameScene(Geometry).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111C26E1D86A81F0078A022 /* GameScene(Geometry).swift */; };
 		4111C2711D86ADD10078A022 /* GameScene(Creation).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111C2701D86ADD10078A022 /* GameScene(Creation).swift */; };
 		4111C2731D86B22F0078A022 /* GameScene(Sensations).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111C2721D86B22F0078A022 /* GameScene(Sensations).swift */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410220971D898DE800283B90 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4111C26E1D86A81F0078A022 /* GameScene(Geometry).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene(Geometry).swift"; sourceTree = "<group>"; };
 		4111C2701D86ADD10078A022 /* GameScene(Creation).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene(Creation).swift"; sourceTree = "<group>"; };
 		4111C2721D86B22F0078A022 /* GameScene(Sensations).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene(Sensations).swift"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				411876411D324347000B33C2 /* Info.plist */,
 				411876491D32464A000B33C2 /* SampleHunter.lua */,
 				4147A6601D8404B60049F142 /* RandomHunter.lua */,
+				410220971D898DE800283B90 /* README */,
 			);
 			path = ScriptedWumpusWorld;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410220981D898DE800283B90 /* README in Resources */,
 				4147A6611D8404B60049F142 /* RandomHunter.lua in Resources */,
 				4118763D1D324347000B33C2 /* Assets.xcassets in Resources */,
 				4118763B1D324347000B33C2 /* GameScene.sks in Resources */,
