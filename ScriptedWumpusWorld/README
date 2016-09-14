@@ -3,6 +3,9 @@
 ## What?
 An implementation of the wumpus world. Write your own wumpus hunter!
 
+For information about the wumpus world setup, see http://aima.cs.berkeley.edu
+"Artificial Intelligence: A Modern Approach" (Russell S., Norvig P.)
+
 ## How?
 To implement your own wumpus hunter, write a lua script that implement a
 function with the following signature:
