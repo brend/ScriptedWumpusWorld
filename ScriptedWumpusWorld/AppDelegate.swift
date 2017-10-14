@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         //openPanel.beginSheet(self.window, completionHandler: {(response) in print(response) })
         let result = openPanel.runModal()
         
-        if result != NSModalResponseOK
+        if result != NSApplication.ModalResponse.OK
             || openPanel.urls.count == 0
         {
             return

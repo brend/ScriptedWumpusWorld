@@ -68,13 +68,13 @@ extension GameScene {
         case right:
             angle = 0
         case up:
-            angle = M_PI_2
+            angle = (Double.pi / 2)
         case left:
-            angle = M_PI
+            angle = Double.pi
         case down:
-            angle = -M_PI_2
+            angle = -(Double.pi / 2)
         default:
-            angle = M_PI_4
+            angle = (Double.pi / 4)
         }
         
         return CGFloat(angle)

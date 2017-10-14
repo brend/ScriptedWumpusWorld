@@ -126,7 +126,7 @@ class GameScene: SKScene {
         if wumpusStillAlive
             && equalGridPositions(hunterSprite, node2: wumpusSprite)
         {
-            let deathAnimation = SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(M_PI), duration: 0.5))
+            let deathAnimation = SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 0.5))
             
             self.hunterSprite.run(deathAnimation)
             

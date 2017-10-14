@@ -50,7 +50,7 @@ extension GameScene {
         if !insideCave(translate(hunterSprite.position, vector: direction)) {
             self.headBumped = true
             
-            action = SKAction.rotate(byAngle: CGFloat(M_PI * 2), duration: 0.5)
+            action = SKAction.rotate(byAngle: CGFloat(Double.pi * 2), duration: 0.5)
         } else {
             action = SKAction.move(by: direction, duration: 0.5)
         }
